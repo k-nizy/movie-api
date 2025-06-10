@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Shows Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TV Shows Search</h1>
+      <form id="search-form">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search for TV shows..." 
+          required
+        >
+        <button type="submit">Search</button>
+      </form>
+      <p id="search-query" class="search-query"></p>
+    </header>
+    
+    <main>
+      <div id="loading" class="hidden">Loading shows...</div>
+      <div id="results"></div>
+    </main>
+    
+    <footer>
+      <p>Data provided by <a href="https://www.tvmaze.com/" target="_blank">TVMaze API</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
